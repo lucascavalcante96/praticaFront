@@ -97,45 +97,35 @@ img{
 }
 table{
     border-collapse: collapse;
+    width: 100%;
+    margin-top: 12px;
 }
 tr{
-    border-bottom: 1px solid #854632;
+    border-bottom: 1px solid #E3DDD7;
 }
 tr:last-child {
     border-bottom: none;
 }
-.values{
-    width: 115px;
-    margin-left: 32px;
-    padding-bottom: 12px;
-    padding-top: 12px;
+td{
+    width: 50%;
+    padding: 12px 32px;
 }
 
-.values>span{
-    margin-left: 30px;
-    margin-right: 78px;
-}
 .nutritional{
     color: #854632;
     font-weight: bold;
-    width: 115px;
-    margin-left: 32px;
-    padding-bottom: 12px;
-    padding-top: 12px;
 }
 
-@media screen and (min-width:481px) and (max-width:780px) {
+@media screen and (min-width:481px) and (max-width:1024px) {
     body{
         background-color: #F3E5D7;
     }
     .container{
         width: 616px;
-        margin: auto;
+        margin: 128px auto 128px auto;
         background-color: #fff;
-        margin-top: 128px;
         padding: 40px;
         border-radius: 24px;
-        margin-bottom: 248px;
     }
     .container> img{
         border-radius: 12px;
@@ -147,11 +137,28 @@ tr:last-child {
     .container-to-padding>h1{
         padding-top: 40px;
     }
-    .values{
-        width: 268px;
+    table{
+        width: 100%;
     }
-    .nutritional{
-        width: 268px;
-        padding-left: 20px;
+    TD{
+        padding: 12PX 32PX;
+    }
+    .values, .nutritional{
+        width: 50%;
+        margin-left: 0;
+    }
+
+    
+}
+@media screen and (min-width:1025px) {
+    body{
+        background-color: #F3E5D7;
+    }
+    .container{
+        width: 736px;
+        margin: 128px auto 128px auto;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 24px;
     }
 }
