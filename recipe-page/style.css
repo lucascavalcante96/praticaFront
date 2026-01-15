@@ -63,6 +63,9 @@ img{
     margin-left: 24px;
     padding-bottom: 8px;
 }
+.container-ingredients>ul>li>div{
+    margin-left: 10px;
+}
 .container-ingredients>ul>li::marker{
     color: #854632;
 }
@@ -76,7 +79,47 @@ img{
     margin-left: 24px;
     padding-bottom: 8px;
 }
+.container-instructions>ol>li>div{
+    margin-left: 10px;
+}
+.container-instructions>ol>li::marker{
+    color: #854632;
+    font-weight: bold;
+}
 
-.container-nutrition{
+.container-nutrition>h2{
+    color: #854632;
+    font-family: var(--fonte-destaque);
+    padding-bottom: 24px;
+}
+.container-nutrition p{
+    margin-bottom: 24px;
+}
+table{
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid #854632;
+}
+tr:last-child {
+    border-bottom: none;
+}
+.values{
+    width: 115px;
+    margin-left: 32px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
 
+.values>span{
+    margin-left: 30px;
+    margin-right: 78px;
+}
+.nutritional{
+    color: #854632;
+    font-weight: bold;
+    width: 115px;
+    margin-left: 32px;
+    padding-bottom: 12px;
+    padding-top: 12px;
 }
