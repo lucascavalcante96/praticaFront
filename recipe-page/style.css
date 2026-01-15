@@ -123,3 +123,35 @@ tr:last-child {
     padding-bottom: 12px;
     padding-top: 12px;
 }
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    body{
+        background-color: #F3E5D7;
+    }
+    .container{
+        width: 616px;
+        margin: auto;
+        background-color: #fff;
+        margin-top: 128px;
+        padding: 40px;
+        border-radius: 24px;
+        margin-bottom: 248px;
+    }
+    .container> img{
+        border-radius: 12px;
+    }
+    .container-to-padding{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container-to-padding>h1{
+        padding-top: 40px;
+    }
+    .values{
+        width: 268px;
+    }
+    .nutritional{
+        width: 268px;
+        padding-left: 20px;
+    }
+}
