@@ -1,0 +1,82 @@
+@font-face {
+        font-family: "Young-Serif";
+        src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Outfit";
+        src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    }
+:root{
+    --fonte-destaque: "Young-Serif", serif;
+    --fonte-projeto:"Outfit";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-projeto);
+}
+ul, p{
+    font-size: 16px;
+}
+h1{
+    font-family: var(--fonte-destaque);
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+hr{
+    margin-bottom: 32px;
+    margin-top: 32px;
+    color: #E3DDD7;
+}
+img{
+    width: 100%;
+}
+.container-to-padding{
+    padding: 40px 32px 0 32px;
+}
+.preparation{
+    margin: 32px 0;
+    background-color: #FFF7FB;
+    padding: 24px;
+}
+.preparation h3{
+    padding-bottom: 16px;
+    color: #7A284E;
+}
+.preparation>ul>li{
+    padding-bottom: 8px;
+    margin-left: 28px;
+}
+.preparation>ul>li::marker{
+    color: #7A284E;
+}
+.container-ingredients h2{
+    color: #854632;
+    font-family: var(--fonte-destaque);
+    padding-bottom: 24px;
+}
+.container-ingredients>ul>li{
+    margin-left: 24px;
+    padding-bottom: 8px;
+}
+.container-ingredients>ul>li::marker{
+    color: #854632;
+}
+
+.container-instructions h2{
+    color: #854632;
+    font-family: var(--fonte-destaque);
+    padding-bottom: 24px;
+}
+.container-instructions>ol>li{
+    margin-left: 24px;
+    padding-bottom: 8px;
+}
+
+.container-nutrition{
+
+}
