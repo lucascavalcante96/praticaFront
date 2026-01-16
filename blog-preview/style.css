@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "figtree-extrabold";
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "figtree-medium";
+    src: url(assets/fonts/static/Figtree-Medium.ttf) format("truetype");
+}
+
+:root{
+    --font-destaque: "figtree-extrabold";
+    --font-projeto: "figtree-medium";
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F4D04E;
+}
+.container{
+    width: 327px;
+    margin: auto;
+    margin-top: 128px;
+    margin-bottom: 128px;
+    border: 1px solid black;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 9px 11px 0px #000;;
+}
+.container>img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+#cabecaclho{
+    font-family: var(--font-destaque);
+    background-color: #F4D04E;
+    width: 73px;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+#data-publicacao{
+    font-size: 12px;
+    font-family: var(--font-projeto);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.container>h1{
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    margin-bottom: 12px;
+}
+.container>h1:hover{
+    cursor: pointer;
+    color: #F4D04E;
+}
+#legenda{
+    font-size: 14px;
+    font-family: var(--font-projeto);
+    color: #6B6B6B;
+}
+.dados{
+    display: flex;
+    margin-top: 12px;
+}
+.dados>img{
+    width: 32px;
+    
+}
+.dados>p{
+    align-content: center;
+    margin-left: 12px;
+    font-family: var(--font-destaque);
+}
