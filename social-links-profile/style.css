@@ -72,3 +72,11 @@ img{
     background-color: #C4F82A;
     color: #333333;
 }
+
+@media screen and (min-width:481px){
+    .container{
+        width: 384px;
+        margin: auto;
+        margin-top: 128px;
+    }
+}
