@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+
+:root{
+    --font-projeto: "Kumbh Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #19a2ae;
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    min-height: 100vh;
+    display: flex;            
+    justify-content: center;   
+    align-items: center;       
+    overflow: hidden;
+}
+.container{
+    width: 326px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: var(--font-projeto);
+}
+.container>img{
+    width: 100%;
+}
+.avatar{
+    position: relative;
+}
+.avatar>img{
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+    left: 110px;
+    border: 6px solid #fff;
+}
+.dados{
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #979797;
+}
+.dados-pessoais{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    
+}
+.dados-pessoais>h1{
+    font-size: 18px;
+}
+.dados-pessoais>p{
+    font-size: 18px;
+    color: #6B7082;
+}
+.dados-pessoais>p{
+    color: #6B7082;
+    font-size: 18px;
+}
+.numeros{
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    justify-content: space-around;
+}
+.container-numeros{
+    color: #6B7082;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.numeros-destaque{
+    color: #2E3349;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media screen and (min-width:481px) {
+    body{
+        height: 100vh;
+    }
+    .container{
+        width: 350px;
+    }
+}
