@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root{
+    --fonte-projeto: "Outfit", sans-serif
+}
+body{
+    background-color: #0D1A2D;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container{
+    width: 350px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 24px;
+    background-color: #15263F;
+    border-radius: 15px; 
+}
+.imagem-container{
+    position: relative;
+    overflow: hidden;
+}
+.container>.imagem-container>img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container>.imagem-container::after{
+    content: url(images/icon-view.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.container>.imagem-container:hover::after{
+    opacity: 1;
+}
+.container>h1{
+    font-family: var(--fonte-projeto);
+    font-weight: 500;
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.container>h1:hover{
+    color: #00FFF8;
+}
+#resume{
+    font-size: 18px;
+    font-family: var(--fonte-projeto);
+    font-weight: 300;
+    color: #8BACD9;
+    line-height: 26px;
+}
+.data{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.eth{
+    width: 50%;
+    align-content: center;
+    display: flex;
+    align-items: center;
+}
+.eth>p{
+    display: inline-block;
+    color: #00FFF8;
+    font-family:  var(--fonte-projeto);
+    font-weight: 500;
+    margin-left: 5px;
+    
+}
+.days{
+    width: 50%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.days>p{
+    display: inline-block;
+    font-family:  var(--fonte-projeto);
+    font-weight: 300;
+    margin-left: 3px;
+    color: #8BACD9;
+}
+hr{
+    color: #979797;
+}
+.dados{
+    display: flex;
+    margin-top: 24px;
+    gap: 16px;
+    align-items: center;
+}
+.dados>img{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 33px;
+}
+.dados>p{
+    color: #8BACD9;
+    font-family: var(--fonte-projeto);
+}
+.dados>p>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.dados>p>a:hover{
+    cursor: pointer;
+    color: #00FFF8;
+}
