@@ -52,11 +52,12 @@
                     <option value="divorciado">Divorciado</option>
                     <option value="uniaoEstavel">União estável</option>
                 </select>
-
-                <select name="state" id="state">
-                    <option value="ac">Acre </option>
-                    <option value="al">Alagoas </option>
-                    <option value="ap">Amapá </option>
+                <br>
+                <label for="userState">Estadp</label>
+                <select name="userState" id="userState" required>
+                    <option value="ac">Acre</option>
+                    <option value="al">Alagoas</option>
+                    <option value="ap">Amapá</option>
                     <option value="am">Amazonas</option>
                     <option value="ba">Bahia</option>
                     <option value="ce">Ceará</option>
@@ -82,7 +83,9 @@
                     <option value="se">Sergipe</option>
                     <option value="to">Tocantins</option>
                 </select>
-
+                <br>
+                <label for="userCity">Cidade</label>
+                <input type="text" name="userCity" id="userCity">
             </fieldset>
             <button type="submit">Enviar</button>
         </form>
