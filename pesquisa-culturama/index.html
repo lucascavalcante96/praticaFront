@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,35 @@
 </head>
 
 <body>
-
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" id="userName" required>
+                <br>
+                <label for="age">Idade</label>
+                <input type="number" name="age" id="age" min="12" max="100" required>
+                <br>
+                <label for="birthDate">Data de Nascimento</label>
+                <input type="date" name="birthDate" id="birthDate">
+                <br>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="userPhoneNumber">Telefone</label>
+                <input type="tel" name="userPhoneNumber" id="userPhoneNumber" pattern="[0-9] {11}"
+                    placeholder="DDD + Número">
+                <br>
+                <label for="userPhoto">Upload de Foto</label>
+                <input type="file" name="userPhoto" id="userPhoto" accept="image/*">
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 
 </html>
