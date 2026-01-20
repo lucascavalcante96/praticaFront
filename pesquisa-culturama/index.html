@@ -38,12 +38,12 @@
             <fieldset>
                 <legend>Perfil</legend>
                 <p>Gênero:</p>
-                <input type="radio" name="userGender" id="userGender" value="Feminino">
-                <label for="userGender">Feminino</label>
-                <input type="radio" name="userGender" id="userGender" value="Masculino">
-                <label for="userGender">Masculino</label>
-                <input type="radio" name="userGender" id="userGender" value="notInformed">
-                <label for="userGender">Prefiro não informar</label>
+                <input type="radio" name="userGender" id="iFeminino" value="Feminino">
+                <label for="iFeminino">Feminino</label>
+                <input type="radio" name="userGender" id="iMasculino" value="Masculino">
+                <label for="iMasculino">Masculino</label>
+                <input type="radio" name="userGender" id="iNotInformed" value="notInformed">
+                <label for="iNotInformed">Prefiro não informar</label>
                 <br>
                 <label for="maritalStatus">Estado Civil: </label>
                 <select name="maritalStatus" id="maritalStatus">
@@ -84,11 +84,22 @@
                     <option value="to">Tocantins</option>
                 </select>
                 <br>
-                <<<<<<< HEAD <label for="userCity">Cidade:</label>
-                    =======
-                    <label for="userCity">Cidade:</label>
-                    >>>>>>> 399c583570d80bbee8c101f2917559aa63ce2541
-                    <input type="text" name="userCity" id="userCity">
+                <label for="userCity">Cidade:</label>
+                <input type="text" name="userCity" id="userCity">
+            </fieldset>
+            <fieldset>
+                <legend>Hábitos</legend>
+
+
+                <p>Redes Sociais:</p>
+                <input type="checkbox" name="social" id="iInstagram" value="instagram">
+                <label for="iInstagram">Instagram</label>
+                <input type="checkbox" name="social" id="iFacebook" value="facebook">
+                <label for="iFacebook">Facebook</label>
+                <input type="checkbox" name="social" id="iLinkedin" value="linkedin">
+                <label for="iLinkedin">Linkedin</label>
+                <input type="checkbox" name="social" id="iTwitter" value="twitter">
+                <label for="iTwitter">Twitter/X</label>
             </fieldset>
             <button type="submit">Enviar</button>
         </form>
