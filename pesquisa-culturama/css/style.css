@@ -1,1 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f9f9;
+    font-family: "Work Sans", sans-serif;
+}
+main{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+img{
+    width: 100px;
+}
+h1{
+    font-family: "Fjalla One", sans-serif;
+}
+form{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+fieldset{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+legend{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 5px;
+}
+label{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea{
+    min-height: 100px;
+}
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
