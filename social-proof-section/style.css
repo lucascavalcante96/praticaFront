@@ -1,5 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+:root {
+  --purple-900: #512051;
+  --purple-300: #927b91;
+  --purple-100: #f7f2f7;
+  --pink-400: #ee69a4;
+  --font-projeto: "League Spartan", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: var(--font-projeto);
+  min-height: 100vh;
+  background:
+    url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    top left,
+    bottom right;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  margin: 80px 24px;
+}
+h1 {
+  color: var(--purple-900);
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+p {
+  color: var(--purple-300);
+  font-size: 19px;
+  line-height: 1.5;
+}
+.rating {
+  background-color: var(--purple-100);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  width: 327px;
+  height: 78px;
+}
+.header {
+  margin-bottom: 32px;
+}
+.rating > img {
+  margin-right: 8px;
+  padding-top: 14px;
+  margin-bottom: 14px;
+}
+.rating > p {
+  color: var(--purple-900);
+  font-weight: bold;
+  padding-bottom: 16px;
+  font-size: 17px;
+}
+.rating:last-child {
+  margin-bottom: 48px;
+}
+.comments {
+  margin-top: 24px;
+  max-width: 327px;
+  margin-bottom: 16px;
+  background-color: var(--purple-900);
+  border-radius: 8px;
+  padding: 32px;
+}
+.comments p {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  text-align: left;
+}
+.user-info {
+  display: flex;
+  margin-right: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.container-user-infos {
+  display: flex;
+  flex-direction: column;
+}
+.container-user-infos p {
+  margin-bottom: -8px;
+  margin-left: 24px;
+  text-align: left;
+}
+.comments img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.comments .verified-buyer {
+  color: var(--pink-400);
+  font-size: 17px;
+  font-weight: normal;
 }
