@@ -127,38 +127,50 @@ body {
   margin-bottom: 32px;
 }
 .features > .calculator > img {
-  width: 64px;
-  height: 64px;
-  position: relative;
-  left: 185px;
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  position: static;
 }
-@media screen and (min-width: 486px) and (max-width: 1024px) {
+
+@media screen and (min-width: 768px) {
   .four-card-feature-section {
-    width: 100%;
-    max-width: 660px;
+    max-width: 880px;
     margin: 80px auto;
   }
-  .four-card-feature-section > .intro {
-    width: 100%;
-    max-width: 540px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .four-card-feature-section > .intro > .subtitle {
-    font-size: 36px;
-  }
-  .four-card-feature-section > .intro > h1 {
-    font-size: 36px;
-  }
-  .four-card-feature-section > .intro > .description {
-    font-size: 15px;
-    margin-bottom: 72px;
-  }
+
   .features {
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
   }
+
   .features > .feature {
     width: 100%;
-    max-width: 314px;
+    max-width: 350px;
+    margin: 0;
+  }
+  .features > .supervisor {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+  }
+  .features > .team-builder {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  .features > .calculator {
+    grid-column: 2;
+    grid-row: 3 / span 2;
+  }
+  .features > .karma {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+  }
+  .features > .feature img {
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+    position: static;
   }
 }
