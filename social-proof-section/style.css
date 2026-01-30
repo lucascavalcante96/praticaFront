@@ -13,7 +13,6 @@
 }
 body {
   font-family: var(--font-projeto);
-  min-height: 100vh;
   background:
     url(images/bg-pattern-top-desktop.svg),
     url(images/bg-pattern-bottom-desktop.svg);
@@ -28,7 +27,6 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 100vh;
   margin: 80px 24px;
 }
 h1 {
@@ -61,7 +59,6 @@ p {
 .rating > p {
   color: var(--purple-900);
   font-weight: bold;
-  padding-bottom: 16px;
   font-size: 17px;
 }
 .rating:last-child {
@@ -69,7 +66,7 @@ p {
 }
 .comments {
   margin-top: 24px;
-  max-width: 327px;
+  width: 327px;
   margin-bottom: 16px;
   background-color: var(--purple-900);
   border-radius: 8px;
@@ -106,4 +103,20 @@ p {
   color: var(--pink-400);
   font-size: 17px;
   font-weight: normal;
+}
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  main {
+    width: 608px;
+    padding: 78px;
+    margin: 118px auto;
+  }
+  .rating {
+    width: 453px;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+  }
+  .comments {
+    width: 453px;
+  }
 }
