@@ -45,7 +45,8 @@ p {
   background-color: var(--purple-100);
   border-radius: 8px;
   margin-bottom: 16px;
-  width: 327px;
+  width: 100%;
+  max-width: 327px;
   height: 78px;
 }
 .header {
@@ -66,7 +67,8 @@ p {
 }
 .comments {
   margin-top: 24px;
-  width: 327px;
+  width: 100%;
+  max-width: 327px;
   margin-bottom: 16px;
   background-color: var(--purple-900);
   border-radius: 8px;
@@ -106,17 +108,22 @@ p {
 }
 @media screen and (min-width: 480px) and (max-width: 1024px) {
   main {
-    width: 608px;
+    width: 100%;
+    max-width: 608px;
     padding: 78px;
     margin: 118px auto;
   }
   .rating {
-    width: 453px;
+    width: 100%;
+    max-width: 453px;
     display: flex;
     align-items: center;
     padding: 16px 32px;
   }
   .comments {
-    width: 453px;
+    width: 100%;
+    max-width: 453px;
   }
+}
+@media screen and (min-width: 1201px) {
 }
