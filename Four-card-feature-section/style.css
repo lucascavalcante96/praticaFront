@@ -133,4 +133,32 @@ body {
   left: 185px;
 }
 @media screen and (min-width: 486px) and (max-width: 1024px) {
+  .four-card-feature-section {
+    width: 100%;
+    max-width: 660px;
+    margin: 80px auto;
+  }
+  .four-card-feature-section > .intro {
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .four-card-feature-section > .intro > .subtitle {
+    font-size: 36px;
+  }
+  .four-card-feature-section > .intro > h1 {
+    font-size: 36px;
+  }
+  .four-card-feature-section > .intro > .description {
+    font-size: 15px;
+    margin-bottom: 72px;
+  }
+  .features {
+    align-items: center;
+  }
+  .features > .feature {
+    width: 100%;
+    max-width: 314px;
+  }
 }
