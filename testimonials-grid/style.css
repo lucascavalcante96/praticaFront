@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-text: "Barlow Semi Condensed", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-text);
+  background-color: #f6f5f6;
+}
+main {
+  margin: auto;
+  margin-top: 73px;
+}
+.card-container {
+  width: 305px;
+  padding: 32px;
+  border-radius: 8px;
+  margin: auto;
+  margin-bottom: 32px;
+}
+h2 {
+  font-size: 20px;
+  margin: 16px 0px;
+  color: #fff;
+}
+p {
+  color: #ede4ff;
+  font-size: 13px;
+}
+.first-card {
+  background-color: #733fc8;
+  color: white;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.card-header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 14px;
+  color: #fff;
+}
+.verified {
+  color: #ede4ff;
+  font-size: 11px;
+}
+.second-card {
+  background-color: #48556a;
+}
+.third-card {
+  background-color: #fff;
+}
+.fourth-card {
+  background-color: #19202d;
+}
+.fifth-card {
+  background-color: #fff;
+}
