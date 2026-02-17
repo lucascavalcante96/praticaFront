@@ -41,6 +41,12 @@ p {
   align-items: center;
   gap: 16px;
 }
+.colored {
+  border: 3px solid #733fc8;
+}
+.border-colored {
+  border: 3px solid #a775f1;
+}
 .card-header img {
   width: 48px;
   height: 48px;
