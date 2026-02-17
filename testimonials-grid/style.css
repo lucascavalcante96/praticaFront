@@ -13,8 +13,8 @@ body {
   background-color: #f6f5f6;
 }
 main {
-  margin: auto;
   margin-top: 73px;
+  margin-bottom: 73px;
 }
 .card-container {
   width: 305px;
@@ -23,52 +23,125 @@ main {
   margin: auto;
   margin-bottom: 32px;
 }
-h2 {
-  font-size: 20px;
-  margin: 16px 0px;
-  color: #fff;
-}
-p {
-  color: #ede4ff;
-  font-size: 13px;
-}
-.first-card {
-  background-color: #733fc8;
-  color: white;
-}
 .card-header {
   display: flex;
+  gap: 17px;
   align-items: center;
-  gap: 16px;
-}
-.colored {
-  border: 3px solid #733fc8;
-}
-.border-colored {
-  border: 3px solid #a775f1;
 }
 .card-header img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
-.name {
-  font-size: 14px;
-  color: #fff;
+.border-colored-purple {
+  border: 2px solid #a775f1;
 }
-.verified {
+.border-colored-darkpurple {
+  border: 2px solid #733fc8;
+}
+.first-card {
+  background-color: #733fc8;
+}
+.first-card h2 {
+  color: #fff;
+  font-size: 20px;
+  margin: 16px 0;
+  font-weight: 600;
+}
+.first-card .card-header .name {
+  color: #fff;
+  font-size: 16px;
+}
+.first-card .card-header .verified {
   color: #ede4ff;
-  font-size: 11px;
+  font-size: 14px;
+}
+.first-card p {
+  color: #ede4ff;
+  font-size: 13px;
 }
 .second-card {
   background-color: #48556a;
 }
+.second-card h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 16px 0;
+}
+.second-card .card-header .name {
+  color: #fff;
+  font-size: 16px;
+}
+.second-card .card-header .verified {
+  color: #a3aab4;
+  font-size: 14px;
+}
+.second-card p {
+  color: #fff;
+  font-size: 13px;
+}
 .third-card {
   background-color: #fff;
 }
+.third-card h2 {
+  color: #48556a;
+  margin: 16px 0;
+}
+.third-card .card-header .name {
+  color: #48556a;
+  font-size: 16px;
+  font-weight: 600;
+}
+.third-card .card-header .verified {
+  color: #676d7e;
+  font-size: 14px;
+  font-weight: 600;
+}
+.third-card p {
+  color: #676d7e;
+  font-size: 13px;
+  font-weight: 600;
+}
 .fourth-card {
   background-color: #19202d;
+  color: #fff;
+}
+.fourth-card h2 {
+  margin: 16px 0;
+  font-weight: 500;
+  font-size: 20px;
+  color: #cfcfcf;
+}
+.fourth-card .card-header .name {
+  font-size: 16px;
+}
+.fourth-card .card-header .verified {
+  font-size: 14px;
+}
+.fourth-card p {
+  font-size: 13px;
+  font-weight: 400;
 }
 .fifth-card {
   background-color: #fff;
+}
+.fifth-card h2 {
+  color: #48556a;
+  margin: 16px 0;
+  font-size: 20px;
+}
+.fifth-card .card-header .name {
+  color: #48556a;
+  font-size: 16px;
+}
+.fifth-card .card-header .verified {
+  color: #a3aab4;
+  font-size: 14px;
+}
+.fifth-card p {
+  font-size: 13px;
+  color: #676d7e;
+  line-height: 18px;
+  font-weight: 500;
 }
