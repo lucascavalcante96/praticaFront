@@ -20,7 +20,7 @@ main {
   width: 305px;
   padding: 32px;
   border-radius: 8px;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 32px;
 }
 .card-header {
@@ -142,6 +142,55 @@ main {
 .fifth-card p {
   font-size: 13px;
   color: #676d7e;
-  line-height: 18px;
   font-weight: 500;
+}
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    margin: 84px 60px;
+    gap: 32px;
+  }
+  .card-container {
+    width: 100%;
+    margin: 0;
+  }
+  .card-container h2 {
+    font-size: 28px;
+  }
+  .card-container p {
+    font-size: 20px;
+  }
+  .card-container .card-header .name {
+    font-size: 24px;
+  }
+  .card-container .card-header .verified {
+    font-size: 22px;
+  }
+  .card-header img {
+    width: 60px;
+    height: 60px;
+  }
+  .first-card {
+    grid-area: 1 / 1 / 2 / 5;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 right 25%;
+    background-size: 125px;
+    position: relative;
+  }
+
+  .second-card {
+    grid-area: 2 / 1 / 2 / 3;
+  }
+  .third-card {
+    grid-area: 2 / 3 / 3 / 5;
+  }
+  .fourth-card {
+    grid-area: 3 / 1 / 4 / 5;
+  }
+  .fifth-card {
+    grid-area: 4 / 1 / 5 / 5;
+  }
 }
