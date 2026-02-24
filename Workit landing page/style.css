@@ -19,9 +19,6 @@
 }
 body {
   font-family: var(--font-projeto);
-}
-.container {
-  overflow: hidden;
   position: relative;
 }
 header {
@@ -29,7 +26,6 @@ header {
   clip-path: ellipse(170% 100% at 50% 0%);
 }
 img {
-  max-width: 100%;
 }
 .container-header {
   display: flex;
@@ -67,9 +63,10 @@ img {
 }
 .image-hero {
   position: absolute;
-  width: 360px;
+  width: 100%;
+  max-width: 320px;
   top: 380px;
-  left: 28px;
+  left: 40px;
   z-index: 2;
 }
 .container-hero {
@@ -77,7 +74,6 @@ img {
   text-align: center;
   background-color: #fcf8ff;
   clip-path: ellipse(170% 100% at 50% 0%);
-  margin-bottom: 112px;
 }
 .container-hero h2 {
   font-size: 24px;
@@ -108,8 +104,7 @@ img {
 }
 .founder img {
   width: 335px;
-  display: block;
-  margin: auto;
+  left: 20px;
   margin-bottom: -70px;
   position: relative;
   z-index: -1;
